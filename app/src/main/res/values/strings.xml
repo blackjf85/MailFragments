@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MailFragments</string>
+    <string name="signin">SIGN IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="mailboxes">Mailboxes</string>
+    <string name="all_inboxes">All Inboxes</string>
+    <string name="icloud">iCloud</string>
+    <string name="hotmail">Hotmail</string>
+    <string name="vip">VIP</string>
+    <string name="special_folders">Special Folders</string>
+    <string name="secure">Secure</string>
+    <string name="notifications">Notifications</string>
+    <string name="gmail">Gmail</string>
+    <string name="done">Done</string>
+    <string name="Error_message">Your username and password don\'t match!</string>
+    <string name="Oops">Oops... couldn\'t sign In</string>
+</resources>

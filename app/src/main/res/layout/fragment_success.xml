@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mailboxesheadTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:text="@string/mailboxes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mailboxesTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mailboxesTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/mailboxes"
+        app:layout_constraintTop_toBottomOf="@id/mailboxesheadTv"
+        app:layout_constraintBottom_toTopOf="@id/allInboxesTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/allInboxesTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/all_inboxes"
+        app:layout_constraintTop_toBottomOf="@id/mailboxesTv"
+        app:layout_constraintBottom_toTopOf="@id/alliboxesDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/alliboxesDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/allInboxesTv"
+        app:layout_constraintBottom_toTopOf="@id/icloudTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/icloudTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/icloud"
+        app:layout_constraintTop_toBottomOf="@id/alliboxesDiv"
+        app:layout_constraintBottom_toTopOf="@id/icloudDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/icloudDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/icloudTv"
+        app:layout_constraintBottom_toTopOf="@id/gmailTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/gmailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/gmail"
+        app:layout_constraintTop_toBottomOf="@id/icloudDiv"
+        app:layout_constraintBottom_toTopOf="@id/gmailDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/gmailDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/gmailTv"
+        app:layout_constraintBottom_toTopOf="@id/hotmailTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/hotmailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/hotmail"
+        app:layout_constraintTop_toBottomOf="@id/gmailDiv"
+        app:layout_constraintBottom_toTopOf="@id/hotmailDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/hotmailDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/hotmailTv"
+        app:layout_constraintBottom_toTopOf="@id/vipTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/vipTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/vip"
+        app:layout_constraintTop_toBottomOf="@id/hotmailDiv"
+        app:layout_constraintBottom_toTopOf="@id/specialFoldersTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/specialFoldersTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/special_folders"
+        app:layout_constraintTop_toBottomOf="@id/vipTv"
+        app:layout_constraintBottom_toTopOf="@id/secureTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/secureTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/secure"
+        app:layout_constraintTop_toBottomOf="@id/specialFoldersTv"
+        app:layout_constraintBottom_toTopOf="@id/secureDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/secureDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/secureTv"
+        app:layout_constraintBottom_toTopOf="@id/notificationsTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/notificationsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/notifications"
+        app:layout_constraintTop_toBottomOf="@id/secureDiv"
+        app:layout_constraintBottom_toTopOf="@id/doneBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/done"
+        app:layout_constraintTop_toBottomOf="@id/notificationsTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
